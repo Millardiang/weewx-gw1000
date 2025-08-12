@@ -1,8 +1,8 @@
 # Ecowitt Gateway (formerly GW1000) Driver
 
-**Note:** The instructions and links in this readme have been produced for WeeWX v5. In general, the same concepts apply to earlier WeeWX versions; however, the detailed steps and commands required will be different. If you wish to persist with an earlier WeeWX version you may wish to refer to the [legacy instructions](https://github.com/gjr80/weewx-gw1000/wiki/Legacy-instructions). Alternatively, you may find it easier to just upgrade to WeeWX v5 - after all it is free.
+**Note:** The instructions and links in this readme have been produced for WeeWX v5. In general, the same concepts apply to earlier WeeWX versions; however, the detailed steps and commands required will be different. If you wish to persist with an earlier WeeWX version you may wish to refer to the [legacy instructions](https://github.com/Millardiang/weewx-gw1000/wiki/Legacy-instructions). Alternatively, you may find it easier to just upgrade to WeeWX v5 - after all it is free.
 
-**Note:** General support issues for the Ecowitt Gateway driver should be raised in the Google Groups [weewx-user forum](https://groups.google.com/g/weewx-user "Google Groups weewx-user forum"). The Ecowitt Gateway driver [Issues Page](https://github.com/gjr80/weewx-gw1000/issues "Ecowitt Gateway driver Issues") should only be used for specific bugs in the Ecowitt Gateway driver code. It is recommended that even if an Ecowitt Gateway driver bug is suspected users first post to the Google Groups [weewx-user forum](https://groups.google.com/g/weewx-user "Google Groups weewx-user forum").
+**Note:** General support issues for the Ecowitt Gateway driver should be raised in the Google Groups [weewx-user forum](https://groups.google.com/g/weewx-user "Google Groups weewx-user forum"). The Ecowitt Gateway driver [Issues Page](https://github.com/Millardiang/weewx-gw1000/issues "Ecowitt Gateway driver Issues") should only be used for specific bugs in the Ecowitt Gateway driver code. It is recommended that even if an Ecowitt Gateway driver bug is suspected users first post to the Google Groups [weewx-user forum](https://groups.google.com/g/weewx-user "Google Groups weewx-user forum").
 
 ## Description
 
@@ -26,7 +26,7 @@ The Ecowitt Gateway driver requires:
 
 ### Installation as a WeeWX driver
 
-**Note:** The following instructions are for installation under WeeWX v5.0.0 or later. For installation under earlier WeeWX versions refer to the [legacy instructions](https://github.com/gjr80/weewx-gw1000/wiki/Legacy-instructions).
+**Note:** The following instructions are for installation under WeeWX v5.0.0 or later. For installation under earlier WeeWX versions refer to the [legacy instructions](https://github.com/Millardiang/weewx-gw1000/wiki/Legacy-instructions).
 
 1.  If the Ecowitt Gateway driver is to be installed on a fresh WeeWX installation first [install WeeWX](http://weewx.com/docs/5.1/usersguide/installing/) and configure WeeWX to use the *simulator* driver.
 
@@ -36,7 +36,7 @@ The Ecowitt Gateway driver requires:
 
     For WeeWX package installs:
 
-        weectl extension install https://github.com/gjr80/weewx-gw1000/releases/latest/download/gw1000.zip 
+        weectl extension install https://github.com/Millardiang/weewx-gw1000/releases/latest/download/gw1000.zip 
  
     **Note:** If the installation fails with an error indicating there is no module named 'six' manually install the Six library using the following command before re-attempting the driver installation:
 
@@ -45,7 +45,7 @@ The Ecowitt Gateway driver requires:
     For WeeWX *pip* installs the Python virtual environment must be activated before the extension is installed:
 
         source ~/weewx-venv/bin/activate
-        weectl extension install https://github.com/gjr80/weewx-gw1000/releases/latest/download/gw1000.zip
+        weectl extension install https://github.com/Millardiang/weewx-gw1000/releases/latest/download/gw1000.zip
 
     **Note:** If the installation fails with an error indicating there is no module named 'six' manually install the Six library using the following command before re-attempting the driver installation:
 
@@ -54,7 +54,7 @@ The Ecowitt Gateway driver requires:
     For WeeWX installs from *git* the Python virtual environment must be activated before the extension is installed:
 
         source ~/weewx-venv/bin/activate
-        python3 ~/weewx/src/weectl.py extension install https://github.com/gjr80/weewx-gw1000/releases/latest/download/gw1000.zip
+        python3 ~/weewx/src/weectl.py extension install https://github.com/Millardiang/weewx-gw1000/releases/latest/download/gw1000.zip
 
     **Note:** If the installation fails with an error indicating there is no module named 'six' manually install the Six library using the following command before re-attempting the driver installation:
 
@@ -116,7 +116,7 @@ The Ecowitt Gateway driver requires:
 
         sudo systemctl restart weewx
 
-7.  You may wish to refer to the [Ecowitt Gateway driver wiki](https://github.com/gjr80/weewx-gw1000/wiki) for further guidance on customising the operation of the Ecowitt Gateway driver and integrating gateway device data into WeeWX generated reports. 
+7.  You may wish to refer to the [Ecowitt Gateway driver wiki](https://github.com/Millardiang/weewx-gw1000/wiki) for further guidance on customising the operation of the Ecowitt Gateway driver and integrating gateway device data into WeeWX generated reports. 
 
 ### Installation as a WeeWX service
 
@@ -176,20 +176,20 @@ The Ecowitt Gateway driver requires:
 
         sudo systemctl restart weewx
 
-7.  You may wish to refer to the [GW1000 driver wiki](https://github.com/gjr80/weewx-gw1000/wiki) for further guidance on customising the operation of the Ecowitt Gateway driver and integrating gateway device data into WeeWX generated reports. 
+7.  You may wish to refer to the [GW1000 driver wiki](https://github.com/Millardiang/weewx-gw1000/wiki) for further guidance on customising the operation of the Ecowitt Gateway driver and integrating gateway device data into WeeWX generated reports. 
 
 
 ## Upgrade Instructions
 
-**Note:** Before upgrading the Ecowitt Gateway driver, check the [Instructions for specific versions](https://github.com/gjr80/weewx-gw1000/wiki/Upgrade-Guide#instructions-for-specific-versions) section of the Ecowitt Gateway driver [Upgrade Guide](https://github.com/gjr80/weewx-gw1000/wiki/Upgrade-Guide) to see if any specific actions are required as part of the upgrade.
+**Note:** Before upgrading the Ecowitt Gateway driver, check the [Instructions for specific versions](https://github.com/Millardiang/weewx-gw1000/wiki/Upgrade-Guide#instructions-for-specific-versions) section of the Ecowitt Gateway driver [Upgrade Guide](https://github.com/Millardiang/weewx-gw1000/wiki/Upgrade-Guide) to see if any specific actions are required as part of the upgrade.
 
 To upgrade from an earlier version of the Ecowitt Gateway driver or GW1000 driver (installed as either a WeeWX driver or a WeeWX service) simply install the Ecowitt Gateway driver version you wish to upgrade to as per the [Installation Instructions](#installation-instructions) above.
 
 
 ## Support
 
-General support issues for the Ecowitt Gateway driver should be raised in the Google Groups [weewx-user forum](https://groups.google.com/g/weewx-user "Google Groups weewx-user forum"). The Ecowitt Gateway driver [Issues Page](https://github.com/gjr80/weewx-gw1000/issues "Ecowitt Gateway driver Issues") should only be used for specific bugs in the Ecowitt Gateway driver code. It is recommended that even if an Ecowitt Gateway driver bug is suspected users first post to the Google Groups [weewx-user forum](https://groups.google.com/g/weewx-user "Google Groups weewx-user forum").
+General support issues for the Ecowitt Gateway driver should be raised in the Google Groups [weewx-user forum](https://groups.google.com/g/weewx-user "Google Groups weewx-user forum"). The Ecowitt Gateway driver [Issues Page](https://github.com/Millardiang/weewx-gw1000/issues "Ecowitt Gateway driver Issues") should only be used for specific bugs in the Ecowitt Gateway driver code. It is recommended that even if an Ecowitt Gateway driver bug is suspected users first post to the Google Groups [weewx-user forum](https://groups.google.com/g/weewx-user "Google Groups weewx-user forum").
 
 ## Licensing
 
-The Ecowitt Gateway driver/GW1000 driver is licensed under the [GNU Public License v3](https://github.com/gjr80/weewx-gw1000/blob/master/LICENSE "Ecowitt Gateway Driver License").
+The Ecowitt Gateway driver/GW1000 driver is licensed under the [GNU Public License v3](https://github.com/Millardiang/weewx-gw1000/blob/master/LICENSE "Ecowitt Gateway Driver License").
