@@ -36,7 +36,7 @@ The Ecowitt Gateway driver requires:
 
     For WeeWX package installs:
 
-        weectl extension install https://github.com/gjr80/weewx-gw1000/releases/latest/download/gw1000.zip 
+        weectl extension install https://github.com/Millardiang/weewx-gw1000/archive/refs/heads/master.zip 
  
     **Note:** If the installation fails with an error indicating there is no module named 'six' manually install the Six library using the following command before re-attempting the driver installation:
 
@@ -45,7 +45,7 @@ The Ecowitt Gateway driver requires:
     For WeeWX *pip* installs the Python virtual environment must be activated before the extension is installed:
 
         source ~/weewx-venv/bin/activate
-        weectl extension install https://github.com/gjr80/weewx-gw1000/releases/latest/download/gw1000.zip
+        weectl extension install https://github.com/Millardiang/weewx-gw1000/archive/refs/heads/master.zip
 
     **Note:** If the installation fails with an error indicating there is no module named 'six' manually install the Six library using the following command before re-attempting the driver installation:
 
@@ -54,7 +54,7 @@ The Ecowitt Gateway driver requires:
     For WeeWX installs from *git* the Python virtual environment must be activated before the extension is installed:
 
         source ~/weewx-venv/bin/activate
-        python3 ~/weewx/src/weectl.py extension install https://github.com/gjr80/weewx-gw1000/releases/latest/download/gw1000.zip
+        python3 ~/weewx/src/weectl.py extension install https://github.com/Millardiang/weewx-gw1000/archive/refs/heads/master.zip
 
     **Note:** If the installation fails with an error indicating there is no module named 'six' manually install the Six library using the following command before re-attempting the driver installation:
 
